@@ -1,6 +1,7 @@
-// expression - a line of code that returns a value
-//  *** EXPRESSIONS NEED SEMI-COLONS!! ***
-// statement - any line of code (functions and if/for/while blocks are statements)
+/* expression - a line of code that returns a value
+  *** EXPRESSIONS NEED SEMI-COLONS!! ***
+statement - any line of code (functions and if/for/while blocks are statements)
+*/
 
 // variable assignments are expressions
 let x = 5;
@@ -48,3 +49,7 @@ console.log(result1); // [1, 2]
 //   default:
 //     // code block
 // }
+
+let string123 = "hello";
+
+console.log(string123.indexOf('z'));
