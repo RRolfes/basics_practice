@@ -50,6 +50,14 @@ console.log(result1); // [1, 2]
 //     // code block
 // }
 
-let string123 = "hello";
+let string = "hello";
 
-console.log(string123.indexOf('z'));
+console.log(string.indexOf('z'));
+
+let array = [1, 2, 3, 4, 5];
+let newArray = array.slice(2, 4); // [3, 4]
+
+// Array.prototype.slice([start, [end]])
+console.log(newArray);
+
+console.log(array.includes(2));
