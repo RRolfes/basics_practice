@@ -39,16 +39,16 @@ console.log(result1); // [1, 2]
 
 
 // Switch Statements
-// switch (expression) {
-//   case x:
-//     // code block
-//     break;
-//   case y:
-//     // code block
-//     break;
-//   default:
-//     // code block
-// }
+switch (expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
 
 let string = "hello";
 
