@@ -61,3 +61,5 @@ let newArray = array.slice(2, 4); // [3, 4]
 console.log(newArray);
 
 console.log(array.includes(2));
+
+console.log(Array.isArray(array));
