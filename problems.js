@@ -95,7 +95,7 @@ Elephant.prototype.grow = function() {
 };
 
 Elephant.prototype.addTrick = function(trick) {
-
+  this.tircks.push(trick);
 };
 
 const joe = new Elephant('Joe', 90, ['painting a pic', 'spinning a ball', 'wearing a hat']);
