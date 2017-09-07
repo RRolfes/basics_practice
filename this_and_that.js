@@ -23,9 +23,9 @@ function Cat(name) {
 }
 
 Cat.prototype.play = function meow() {
-  let name = this.name;
+  const kitty = this;
   this.toys.forEach(function(toy) {
-    console.log(`${name} plays with ${toy}`);
+    console.log(`${kitty.name} plays with ${toy}`);
   });
 };
 
