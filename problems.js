@@ -35,3 +35,36 @@ function fizzBuzz(arr) {
 const arr = [1,3,5,15,30,33,35];
 
 // console.log(fizzBuzz(arr));
+
+function isPrime(num){
+  if (num === 1) return false;
+  if (num === 2 ) return true;
+  for (var i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+// console.log(isPrime(2));
+// console.log(isPrime(10));
+// console.log(isPrime(15485863));
+
+function sumOfNPrimes(num){
+  let i = 0;
+  let count = 0;
+  let ans = 0;
+  while (count <= num) {
+    if (isPrime(i)) {
+      ans += i;
+      count++;
+    }
+    i++;
+  }
+  return ans;
+}
+
+// console.log(sumOfNPrimes(0)); // 0
+// console.log(sumOfNPrimes(1)); // 2
+// console.log(sumOfNPrimes(4)); // 17
+
+z
