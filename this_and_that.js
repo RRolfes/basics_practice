@@ -15,3 +15,19 @@ let cat = {
 //...sets THIS to the object it was called upon
 cat.purr();
 cat.purrMore();
+
+
+function Cat(name) {
+  this.name = name;
+  this.toys = ['string', 'ball', 'balloon'];
+}
+
+Cat.prototype.play = function meow() {
+  let name = this.name;
+  this.toys.forEach(function(toy) {
+    console.log(`${name} plays with ${toy}`);
+  });
+};
+
+let garfield = new Cat('garfield');
+garfield.play();
