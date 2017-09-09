@@ -123,4 +123,18 @@ const paradeHelper = function(elephant) {
   console.log(`${elephant.name} is walking by`);
 };
 
-herd.forEach(elephant => paradeHelper(elephant));
+// herd.forEach(elephant => paradeHelper(elephant));
+
+
+const dinnerBreaky = function() {
+  let order = "I'd like scrambled eggs and bacon please.";
+  console.log(order);
+
+  return function(item) {
+    order = `${order.slice(0, order.length - 8)} and ${item} please.`;
+    console.log(order);
+  };
+};
+
+let order = dinnerBreaky();
+order('pancakes');
