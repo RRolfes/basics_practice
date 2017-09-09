@@ -63,9 +63,9 @@ function sumOfNPrimes(num){
   return ans;
 }
 
-// console.log(sumOfNPrimes(0)); // 0
-// console.log(sumOfNPrimes(1)); // 2
-// console.log(sumOfNPrimes(4)); // 17
+console.log(sumOfNPrimes(0)); // 0
+console.log(sumOfNPrimes(1)); // 2
+console.log(sumOfNPrimes(4)); // 17
 
 const printCallback = function(word) {
   console.log(word);
