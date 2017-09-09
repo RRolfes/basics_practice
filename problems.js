@@ -140,3 +140,4 @@ let order = dinnerBreaky();
 order('pancakes');
 order('waffles');
 order('fruit');
+order('a smoothie');
