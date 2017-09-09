@@ -138,3 +138,4 @@ const dinnerBreaky = function() {
 
 let order = dinnerBreaky();
 order('pancakes');
+order('waffles');
