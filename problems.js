@@ -34,7 +34,7 @@ function fizzBuzz(arr) {
 
 const arr = [1,3,5,15,30,33,35];
 
-// console.log(fizzBuzz(arr));
+console.log(fizzBuzz(arr));
 
 function isPrime(num){
   if (num === 1) return false;
