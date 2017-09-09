@@ -123,7 +123,7 @@ const paradeHelper = function(elephant) {
   console.log(`${elephant.name} is walking by`);
 };
 
-// herd.forEach(elephant => paradeHelper(elephant));
+herd.forEach(elephant => paradeHelper(elephant));
 
 
 const dinnerBreaky = function() {
