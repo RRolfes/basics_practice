@@ -110,7 +110,7 @@ Elephant.prototype.play = function () {
 
 let joe = new Elephant('Joe', 90, ['painting', 'spinning', 'wearing a hat']);
 
-// console.log(joe.trumpet());
+console.log(joe.trumpet());
 
 let ellie = new Elephant("Ellie", 185, ["giving a ride", "playing hide & seek"]);
 let charlie = new Elephant("Charlie", 200, ["painting pictures", "spraying water for a slip and slide"]);
