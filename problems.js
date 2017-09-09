@@ -77,7 +77,7 @@ function titleize(array, cb){
   });
 }
 
-// titleize(["Mary", "Brian", "Leo"], printCallback);
+titleize(["Mary", "Brian", "Leo"], printCallback);
 
 
 
