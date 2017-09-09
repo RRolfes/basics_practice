@@ -77,16 +77,21 @@ function titleize(array, cb){
   });
 }
 
-titleize(["Mary", "Brian", "Leo"], printCallback);
+// titleize(["Mary", "Brian", "Leo"], printCallback);
+
+
 
 function Elephant(name, height, tricks){
   this.name = name;
   this.height = height;
-  this. tricks = tricks;
+  this.tricks = tricks;
+  this.parade = function() {
+    console.log(`${this.name} is walking by`);
+  };
 }
 
 Elephant.prototype.trumpet = function() {
-  console.log(`${this.name} the elephant goes 'phrRRRR'`);
+  return `${this.name} the elephant goes 'phrRRRR'`;
 };
 
 Elephant.prototype.grow = function() {
@@ -98,6 +103,24 @@ Elephant.prototype.addTrick = function(trick) {
   this.tircks.push(trick);
 };
 
-const joe = new Elephant('Joe', 90, ['painting a pic', 'spinning a ball', 'wearing a hat']);
+Elephant.prototype.play = function () {
+  let num = Math.floor(Math.random() * Math.floor(this.tricks.length + 1));
+  return `${this.name} is ${this.tricks[num]}`;
+};
 
-console.log(joe.grow());
+let joe = new Elephant('Joe', 90, ['painting', 'spinning', 'wearing a hat']);
+
+// console.log(joe.trumpet());
+
+let ellie = new Elephant("Ellie", 185, ["giving a ride", "playing hide & seek"]);
+let charlie = new Elephant("Charlie", 200, ["painting pictures", "spraying water for a slip and slide"]);
+let kate = new Elephant("Kate", 234, ["writing letters", "stealing peanuts"]);
+let micah = new Elephant("Micah", 143, ["trotting", "playing tic tac toe", "doing elephant ballet"]);
+
+let herd = [ellie, charlie, kate, micah];
+
+const paradeHelper = function(elephant) {
+  console.log(`${elephant.name} is walking by`);
+};
+
+herd.forEach(elephant => paradeHelper(elephant));
