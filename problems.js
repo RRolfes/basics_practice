@@ -67,4 +67,33 @@ function sumOfNPrimes(num){
 // console.log(sumOfNPrimes(1)); // 2
 // console.log(sumOfNPrimes(4)); // 17
 
-z
+const printCallback = function(word) {
+  console.log(word);
+};
+
+function titleize(array, cb){
+  array.forEach( word => {
+    cb(word);
+  });
+}
+
+titleize(["Mary", "Brian", "Leo"], printCallback);
+
+function Elephant(name, height, tricks){
+  this.name = name;
+  this.height = height;
+  this. tricks = tricks;
+}
+
+Elephant.prototype.trumpet = function() {
+  console.log(`${this.name} the elephant goes 'phrRRRR'`);
+};
+
+Elephant.prototype.grow = function() {
+  this.height += 12;
+  return this.height;
+};
+
+const joe = new Elephant('Joe', 90, ['painting a pic', 'spinning a ball']);
+
+console.log(joe.grow());
