@@ -94,6 +94,6 @@ Elephant.prototype.grow = function() {
   return this.height;
 };
 
-const joe = new Elephant('Joe', 90, ['painting a pic', 'spinning a ball']);
+const joe = new Elephant('Joe', 90, ['painting a pic', 'spinning a ball', 'wearing a hat']);
 
 console.log(joe.grow());
